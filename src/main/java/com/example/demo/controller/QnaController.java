@@ -84,7 +84,8 @@ public class QnaController {
                     realPath = "/app/upload/qna/";
 				// 배포중
 				else
-					realPath = "/home/ubuntu/app/resources/qna/";
+//					realPath = "/home/ubuntu/app/resources/qna/";
+                    realPath = "/app/upload/notice/";
 
 				// 폴더가 없으면 생성
 				File file1 = new File(realPath);

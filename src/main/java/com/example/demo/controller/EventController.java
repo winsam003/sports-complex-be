@@ -130,10 +130,12 @@ public class EventController {
 			
 //			String realPath = "C:\\jgj\\TeamSSJ\\Sports-complex\\sports-complex-back\\src\\main\\webapp\\images\\eventBoard\\";
 //			String realPath = "/home/ubuntu/server/"; 요러케 폴더를 만들어야 되나
-			String realPath = "/home/ubuntu/app/resources/event/";
-			
+//			String realPath = "/home/ubuntu/app/resources/event/";
+			String realPath = "/app/upload/event/";
+
 			if(realPath.contains(".TeamSSJ."))
-				realPath = "C:\\jgj\\TeamSSJ\\Sports-complex\\sports-complex-back\\src\\main\\webapp\\images\\eventBoard\\";
+//				realPath = "C:\\jgj\\TeamSSJ\\Sports-complex\\sports-complex-back\\src\\main\\webapp\\images\\eventBoard\\";
+                realPath = "/app/upload/event/";
 			else 
 //				realPath = "C:\\jgj\\TeamSSJ\\Sports-complex\\sports-complex-back\\src\\main\\webapp\\images\\eventBoard\\";
 //				realPath = "/home/ubuntu/app/resources/event/";
@@ -215,10 +217,11 @@ public class EventController {
 			
 			entity.setEventuploadfile(eventfilef.getOriginalFilename());
 			
-			String realPath = "/home/ubuntu/app/resources/event/";
-			
+//			String realPath = "/home/ubuntu/app/resources/event/";
+			String realPath = "/app/upload/event/";
+
 			if(realPath.contains(".TeamSSJ."))
-				realPath = "C:\\jgj\\TeamSSJ\\Sports-complex\\sports-complex-back\\src\\main\\webapp\\images\\eventBoard\\";
+				realPath = "/app/upload/event/";
 			else 
 //				realPath = "/home/ubuntu/app/resources/event/";
                 realPath = "/app/upload/event/";

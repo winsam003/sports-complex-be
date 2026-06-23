@@ -190,7 +190,8 @@ public class NoticeBoardContoller {
 //				realPath = "E:\\Sam\\project\\Sports-complex\\sports-complex-back\\src\\main\\webapp\\images\\noticeBoard\\";
 				realPath = "/app/upload/notice/";
 			else
-				realPath = "/home/ubuntu/app/resources/notice/";
+//				realPath = "/home/ubuntu/app/resources/notice/";
+                realPath = "/app/upload/notice/";
 						
 						
 			// 1.1. 해당 위치에 폴더가 존재하지 않다면 만들기
