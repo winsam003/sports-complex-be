@@ -62,7 +62,9 @@ public class WebMvcConfig implements WebMvcConfigurer {
 //				.allowedOrigins("http://localhost:3000")
 				// 탄력적 ip주소 할당해주기	
 				.allowedOrigins("http://localhost:3000",
-						"http://fitnest.s3-website.ap-northeast-2.amazonaws.com/")
+						"http://fitnest.s3-website.ap-northeast-2.amazonaws.com/",
+                        "https://yakyak.winsam.xyz",
+                        "https://sports-complex-fe.vercel.app")
 //						"http://dbrghl-bucket.s3-website.ap-northeast-2.amazonaws.com/")
 				// GET, POST, PUT, PATCH, DELETE, OPTIONS 메서드를 허용한다.
 				.allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS").allowedHeaders("*")
