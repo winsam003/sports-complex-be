@@ -46,7 +46,7 @@ public class Qna {
 	private Date qadate;
 	@Column(nullable = false, updatable = false)
 	private Boolean qaopen;
-	@Column(nullable = false, updatable = false)
+	@Column(nullable = true, updatable = false)
 	private String qapassword;
 	@Column(nullable = false, updatable = false)
 	private Integer qacount;

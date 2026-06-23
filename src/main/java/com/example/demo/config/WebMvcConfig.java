@@ -15,36 +15,51 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry
-			.addResourceHandler("/banner/bannerinsert")
-			.addResourceLocations("file:///home/ubuntu/app/resources/banner/");
-		registry
-			.addResourceHandler("/banner/bannerimages")
-			.addResourceLocations("file:///home/ubuntu/app/resources/banner/");				// banner
-        registry
-        	.addResourceHandler("/notice/noticeSubmit")
-        	.addResourceLocations("file:///home/ubuntu/app/resources/notice/");
-        registry
-        	.addResourceHandler("/notice/downloadFile")
-        	.addResourceLocations("file:///home/ubuntu/app/resources/notice/");
-        registry
-    		.addResourceHandler("/notice/noticeModify")
-    		.addResourceLocations("file:///home/ubuntu/app/resources/notice/");				// notice
-        registry
-        	.addResourceHandler("/event/eventinsert")
-        	.addResourceLocations("file:///home/ubuntu/app/resources/event/");
-        registry
-        	.addResourceHandler("/event/eventimages")
-        	.addResourceLocations("file:///home/ubuntu/app/resources/event/");
-        registry
-        	.addResourceHandler("/event/eventupdate")
-        	.addResourceLocations("file:///home/ubuntu/app/resources/event/");				// event
-		registry
-			.addResourceHandler("/qna/qnaInsert")
-			.addResourceLocations("file:///home/ubuntu/app/resources/qna/");
-		registry
-			.addResourceHandler("/qna/downloadFile")
-			.addResourceLocations("file:///home/ubuntu/app/resources/qna/");				// qna
+        // 1. Banner 이미지 서빙 설정
+        registry.addResourceHandler("/images/banner/**")
+                .addResourceLocations("file:/app/upload/banner/");
+
+        // 2. Notice 이미지 및 파일 서빙 설정
+        registry.addResourceHandler("/images/notice/**")
+                .addResourceLocations("file:/app/upload/notice/");
+
+        // 3. Event 이미지 서빙 설정
+        registry.addResourceHandler("/images/event/**")
+                .addResourceLocations("file:/app/upload/event/");
+
+        // 4. QnA 이미지 및 파일 서빙 설정
+        registry.addResourceHandler("/images/qna/**")
+                .addResourceLocations("file:/app/upload/qna/");
+//		registry
+//			.addResourceHandler("/banner/bannerinsert")
+//			.addResourceLocations("file:///home/ubuntu/app/resources/banner/");
+//		registry
+//			.addResourceHandler("/banner/bannerimages")
+//			.addResourceLocations("file:///home/ubuntu/app/resources/banner/");				// banner
+//        registry
+//        	.addResourceHandler("/notice/noticeSubmit")
+//        	.addResourceLocations("file:///home/ubuntu/app/resources/notice/");
+//        registry
+//        	.addResourceHandler("/notice/downloadFile")
+//        	.addResourceLocations("file:///home/ubuntu/app/resources/notice/");
+//        registry
+//    		.addResourceHandler("/notice/noticeModify")
+//    		.addResourceLocations("file:///home/ubuntu/app/resources/notice/");				// notice
+//        registry
+//        	.addResourceHandler("/event/eventinsert")
+//        	.addResourceLocations("file:///home/ubuntu/app/resources/event/");
+//        registry
+//        	.addResourceHandler("/event/eventimages")
+//        	.addResourceLocations("file:///home/ubuntu/app/resources/event/");
+//        registry
+//        	.addResourceHandler("/event/eventupdate")
+//        	.addResourceLocations("file:///home/ubuntu/app/resources/event/");				// event
+//		registry
+//			.addResourceHandler("/qna/qnaInsert")
+//			.addResourceLocations("file:///home/ubuntu/app/resources/qna/");
+//		registry
+//			.addResourceHandler("/qna/downloadFile")
+//			.addResourceLocations("file:///home/ubuntu/app/resources/qna/");				// qna
 	}
 
 	@Override

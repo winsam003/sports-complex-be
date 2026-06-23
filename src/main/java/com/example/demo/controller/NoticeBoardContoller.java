@@ -48,8 +48,9 @@ import java.nio.file.Path;
 public class NoticeBoardContoller {
 	NoticeBoardServiceImpl service;
 //	private static final String DOWNLOAD_DIR = "E:\\Sam\\project\\Sports-complex\\sports-complex-back\\src\\main\\webapp\\images\\noticeBoard\\";
-	private static final String DOWNLOAD_DIR = "/home/ubuntu/app/resources/notice/";
-	
+//	private static final String DOWNLOAD_DIR = "/home/ubuntu/app/resources/notice/";
+	private static final String DOWNLOAD_DIR = "/app/upload/notice/";
+
 	
 	// noticeList 공지사항 게시글 list
 	@GetMapping(value="/noticeList", produces=MediaType.APPLICATION_JSON_VALUE)
@@ -126,8 +127,9 @@ public class NoticeBoardContoller {
 			// 1. 배포 전, 배포 후 물리적 위치 저장
 //			String realPath = "E:\\Sam\\project\\Sports-complex\\sports-complex-back\\src\\main\\webapp\\images\\noticeBoard\\";
 //			String realPath = "E:\\Sam\\project\\Sports-complex\\sports-complex\\public\\img\\";
-			String realPath = "/home/ubuntu/app/resources/notice/";
-			
+//			String realPath = "/home/ubuntu/app/resources/notice/";
+			String realPath = "/app/upload/notice/";
+
 			
 			// 솔직히 무슨 기준으로 배포 전, 후 를 나눠야할지 모르겠음 일단 같은 폴더로 지정했음
 //			if(realPath.contains(".project."))
@@ -185,8 +187,9 @@ public class NoticeBoardContoller {
 						
 			// 솔직히 무슨 기준으로 배포 전, 후 를 나눠야할지 모르겠음 일단 같은 폴더로 지정했음
 			if(realPath.contains(".Sam."))
-				realPath = "E:\\Sam\\project\\Sports-complex\\sports-complex-back\\src\\main\\webapp\\images\\noticeBoard\\";
-			else 
+//				realPath = "E:\\Sam\\project\\Sports-complex\\sports-complex-back\\src\\main\\webapp\\images\\noticeBoard\\";
+				realPath = "/app/upload/notice/";
+			else
 				realPath = "/home/ubuntu/app/resources/notice/";
 						
 						

@@ -136,8 +136,9 @@ public class EventController {
 				realPath = "C:\\jgj\\TeamSSJ\\Sports-complex\\sports-complex-back\\src\\main\\webapp\\images\\eventBoard\\";
 			else 
 //				realPath = "C:\\jgj\\TeamSSJ\\Sports-complex\\sports-complex-back\\src\\main\\webapp\\images\\eventBoard\\";
-				realPath = "/home/ubuntu/app/resources/event/";
-			
+//				realPath = "/home/ubuntu/app/resources/event/";
+				realPath = "/app/upload/event/";
+
 			// 1.1. 해당 위치에 폴더가 존재하지 않다면 만들기
 			File file1 = new File(realPath);
 			if(!file1.exists()) {
@@ -167,7 +168,8 @@ public class EventController {
 	@GetMapping(value = "/eventimages")
 	public ResponseEntity<?> getImagePath(@RequestParam String img) throws Exception {
 		
-		String realPath = "/home/ubuntu/app/resources/event/";
+//		String realPath = "/home/ubuntu/app/resources/event/";
+		String realPath = "/app/upload/event/";
 //		String realPath = "C:\\jgj\\TeamSSJ\\Sports-complex\\sports-complex-back\\src\\main\\webapp\\images\\eventBoard\\";
 		// String realPath = "E:\\Sam\\project\\Sports-complex\\sports-complex-back\\src\\main\\webapp\\images\\eventBanner\\\\";
 		
@@ -218,7 +220,8 @@ public class EventController {
 			if(realPath.contains(".TeamSSJ."))
 				realPath = "C:\\jgj\\TeamSSJ\\Sports-complex\\sports-complex-back\\src\\main\\webapp\\images\\eventBoard\\";
 			else 
-				realPath = "/home/ubuntu/app/resources/event/";
+//				realPath = "/home/ubuntu/app/resources/event/";
+                realPath = "/app/upload/event/";
 			
 			// 1.1. 해당 위치에 폴더가 존재하지 않다면 만들기
 			File file1 = new File(realPath);
