@@ -16,19 +16,19 @@ public class WebMvcConfig implements WebMvcConfigurer {
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
         // 1. Banner 이미지 서빙 설정
-        registry.addResourceHandler("/images/banner/**")
+        registry.addResourceHandler("/banner/**")
                 .addResourceLocations("file:/app/upload/banner/");
 
         // 2. Notice 이미지 및 파일 서빙 설정
-        registry.addResourceHandler("/images/notice/**")
+        registry.addResourceHandler("/notice/**")
                 .addResourceLocations("file:/app/upload/notice/");
 
         // 3. Event 이미지 서빙 설정
-        registry.addResourceHandler("/images/event/**")
+        registry.addResourceHandler("/event/**")
                 .addResourceLocations("file:/app/upload/event/");
 
         // 4. QnA 이미지 및 파일 서빙 설정
-        registry.addResourceHandler("/images/qna/**")
+        registry.addResourceHandler("/qna/**")
                 .addResourceLocations("file:/app/upload/qna/");
 //		registry
 //			.addResourceHandler("/banner/bannerinsert")
