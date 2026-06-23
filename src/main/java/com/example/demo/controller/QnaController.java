@@ -90,7 +90,7 @@ public class QnaController {
 				// 폴더가 없으면 생성
 				File file1 = new File(realPath);
 				if (!file1.exists())
-					file1.mkdir();
+					file1.mkdirs();
 
 				// 저장할 파일명 생성 (중복 방지를 위해 UUID 활용)
 				String filename = UUID.randomUUID().toString() + "_" + file.getOriginalFilename();

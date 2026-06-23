@@ -89,7 +89,7 @@ public class BannerController {
 			// 1.1. 해당 위치에 폴더가 존재하지 않다면 만들기
 			File file1 = new File(realPath);
 			if(!file1.exists()) {
-				file1.mkdir();
+				file1.mkdirs();
 			}
 			
 			// 1.2. 저장 할 파일 데이터가 존재한다면 저장 경로에 파일 이름을 붙여주고 파일 복사 (저장)
